@@ -1,0 +1,16 @@
+header {
+    background-color:grey;
+}
+.navbar{
+    width:100%;
+    min-height:30px;
+    padding:10px;
+    position:fixed;
+    text-align:center;
+}
+.navbarlogo{
+    align-content: normal;
+}
+.navbar li{
+    display:inline;
+}
