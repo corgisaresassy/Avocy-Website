@@ -15,6 +15,12 @@ body{
     background-color:whitesmoke;
 }
 
+footer{
+    background-color:#00609C;
+    color:whitesmoke;
+    display:flex;
+}
+
 /* navbar stuff here */
 header {
     background-color: whitesmoke;
@@ -94,7 +100,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 }
 /* here begins the work for the overlay div */
 .overlay{
-    background-image: url(https://placehold.co/600x400/png);
+    background-image: linear-gradient(0deg,rgba(218,223,225,0.6),rgba(0,96,156,0.6)), url(images/Therapyheader.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     min-height:525px;
@@ -105,6 +111,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     margin: 250px 10px 0 0;
     max-width: 40vw;
     font-size:2.3em;
+    color:#00609C;
 }
 .overlaybutton{
     float:right;
@@ -131,6 +138,72 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     height: auto;
     margin-left:4vw;
     min-width: 80px;
+}
+
+/* begin area for the first textbox and textboxes in general */
+
+.textbox{
+width:90%;
+margin-left:5%;
+}
+
+.textheader{
+    color:#00609C;
+    border-bottom: 4px solid #F5CE3E;
+    width:100%;
+}
+
+.textboxcontent{
+    font-weight:300;
+    font-size:1.3em;
+}
+.flexbox{
+    display:flex;
+}
+.break-column{
+    flex-basis:100%;
+    width:0;
+}
+
+.textboxleft{
+    width:45%;
+}
+.contentright{
+    width:45%;
+    margin-left:5%;
+    margin-top: 25px;
+}
+/* relapse graphic creation content */
+#rightgraphic{
+    float:right;
+    width:90%;
+    margin-right:5%;
+}
+
+/* drop down reactive elements */
+
+.dropbox{
+    text-align:center;
+    width:80%;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    margin:10px 10px 10px 5%;
+    padding: 5px 10px;
+}
+.smallimg{
+    display:inline;
+    max-width:50px;
+    height:auto;
+    filter:brightness(0) invert(1);
+}
+.inline{
+    display:inline;
+}
+
+/* footer stuff here (except global) */
+.listoflists{
+    list-style-type:none;
 }
 
 /* sticky phone icon for mobile only to call directly */
@@ -195,4 +268,13 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     }
     .navbuttoncontainer:hover .mobilenav{ display:block; }
     .navbuttoncontainer:active .mobilenav{ display:block; }
+    .flexbox{
+        display:block;
+    }
+    .contentright{
+        width:80%;
+    }
+    .textboxleft{
+        width:80%;
+    }
 }
