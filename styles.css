@@ -4,6 +4,16 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+a:link{
+    color:inherit;
+    text-decoration:none;
+}
+
+a:visited{
+    color:inherit;
+    text-decoration:none;
+}
+
 .button{
     color:whitesmoke;
     padding: 15px 25px;
@@ -190,6 +200,7 @@ margin-left:5%;
     justify-content:space-evenly;
     margin:10px 10px 10px 5%;
     padding: 5px 10px;
+    flex-wrap:wrap;
 }
 .smallimg{
     display:inline;
@@ -197,9 +208,20 @@ margin-left:5%;
     height:auto;
     filter:brightness(0) invert(1);
 }
+.dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:200px;margin:0;}
+.dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:200px;margin:0;}
 .inline{
     display:inline;
 }
+.dropdowncontent{
+    visibility:hidden;
+    margin:-20px;
+    height:0;
+    opacity:0;
+    transition: visibility 0s, height .5s, opacity 1.2s ease-in;
+    width:100%;
+}
+
 
 /* footer stuff here (except global) */
 .listoflists{
@@ -242,6 +264,8 @@ margin-left:5%;
     .imagebar img{
         min-width:120px;
     }
+    .dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
+    .dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
 }
 
 
