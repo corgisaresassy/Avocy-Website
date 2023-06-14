@@ -8,27 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Noto+Sans:wght@300&family=Open+Sans:ital,wght@0,500;0,700;1,400&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <a href="#"><img class="navbarlogo" src="images/logofiles/Avocy_StandardLogo-200px.png" alt="Avocy Logo"></a>
         <ul class="navbar">
-            <li><a href="#">Telehealth Therapy</a></li>
-            <li><a href="#">Insurance</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Login</a></li>
+            <li><a href="#telehealth">Telehealth Therapy</a></li>
+            <li><a href="#insurance">Insurance</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- <li><a href="#">Login</a></li> -->
         </ul>
         <div class="navbuttoncontainer">
             <div class="mobilenav">
-                <a href="#">Telehealth Therapy</a>
-                <a href="#">Insurance</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
+                <a href="#telehealth">Telehealth Therapy</a>
+                <a href="#insurance">Insurance</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <!-- <a href="#">Login</a> -->
             </div>
             <div class="navbutton"></div>
             <!-- <div class="navbutton"></div>
@@ -40,24 +40,67 @@
         <!-- Image overlay div -->
         <div class="overlay">
             <h1 class="overlaytext">Redefine long-term recovery at Avocy</h1>
-            <a href="#"><p class="button overlaybutton"> Learn More</p></a>
-            <a href="#"><p class="button overlaybutton"> Accepted Insurance</p></a>
+            <a href="#contact"><p class="button overlaybutton1">Get In Touch</p></a>
+            <a href="#insurance"><p class="button overlaybutton2">We Take Insurance</p></a>
         </div>
-        <!-- Imagebar -->
-        <div class = "imagebar">
-            <img src="images/bcbslogo.png">
-            <img src="images/aetnalogocrop.png">
-            <img src="images/cignalogo.png">
-            <img src="images/unitedlogo.png">
+        <div class="textbox postfadegrey bottomgoldborder">
+            <h3 class="subheader"> The Avocy Difference</h3>
+            <h2 class="textheader" id="telehealth">Telehealth Therapy</h2>
+            <!-- Break into three columns, seperate with gold, various harmonious colors for titles for each section, see cleans thing
+            Also wants one blurb under telehealth therapy in a light italic. Make base font open sans.-->
+            <!-- Think about using one of the colorful logo versions as a background for a boring section -->
+            <p class="underheader">
+                Avocy's unique telehealth therapy program connects patients with insurance covered, evidence based care up to three times a week.
+                Avocy tailors it's outpatient program to the patient needs and helps ensure patients work with one of our expert addiction focused therapists to receive the best possible care in their recovery journey.
+            </p>
+            <div class="columnholder">
+                <div class="columnof3">
+                    <h3 class="columnheader">Free Cookies</h3>
+                    Avocy offers up to thrice weekly insurance-covered telehealth therapy to people of all ages recovering from substance use disorder and other mental health issues. <br><br>
+                    Our expert clinical staff meet the patient where they are to help them work through the unique struggles of addiction recovery. We take a humanistic approach to treatment and recovery.
+                </div>
+                <div class="columnof3">
+                    <h3 class="columnheader">Minimal Beatings!</h3>
+                    Our wide range of clinical approaches includes: Existentialism, DBT, ACT, EMDR, CBT. <br>
+                    Find the best approach that fits your needs.
+                </div>
+                <div class="columnof3"> 
+                    <h3 class="columnheader">Drugs are Bad</h3>
+                    Have access to your therapist more than once per week. Some weeks are harder than others. You should have the additional support you need when you need it. <br><br> 
+                    Utlize your in-network benefits to minimize the costs associated with weekly or biweekly therapy.
+                </div>
+            </div>
         </div>
-        <!-- text box 1, therapy approaches -->
-        <div class="textbox">
-            <h2 class="textheader">A different Approach to Therapy</h2>
-            <p class="textboxcontent">Our wide range of clinical approaches includes: Existentialism, DBT, ACT, EMDR, CBT. <br> Find the best approach that fits your needs. <br><br> Have access to your therapist more than once per week. Some weeks are harder than others. You should have the additional support you need when you need it. <br><br> Utlize your in-network benefits to minimize the costs associated with weekly or biweekly therapy.</p>
+        <div class="flexbox postfadegrey greenbottomborder">
+            <div class = "imagebar textboxleft">
+                <img src="images/bcbslogo.png">
+                <img src="images/aetnalogocrop.png">
+                <img src="images/cignalogo.png">
+                <img src="images/unitedlogo.png">
+            </div>
+            <!--put images and text side by side. Left image and right content. -->
+            <!-- text box 1, therapy approaches -->
+            <div class="contentright">
+                <h3 class="subheader"> Affordable Treatment</h3>
+                <h2 class="textheader textheader2" id="insurance">Insurance</h2>
+                <p class="underheader bottomblueborder">
+                    Avocy was built with the patients cost in mind. Many patients will have no out of pocket cost.
+                </p>
+                <p class="textboxcontent">
+                    Avocy's services are covered by all major health insurance providers and include telehealth therapy up to three times a week. <br><br>
+                    Avocy works closely with your insurance company to keep patient costs low and treatment can often be free for those who've met their deductibles and out-of-pocket max. <br><br>
+                    Feel comfortable going through therapy specialized for your needs without breaking the bank.
+                </p>
+            </div>
+            
         </div>
-        <div class="flexbox">
+        <div class="flexbox postfadegrey bottomgoldborder">
             <div class="textbox textboxleft">
-                <h2 class="textheader">About Avocy</h2>
+                <h3 class="subheader"> Built Patient First</h3>
+                <h2 class="textheader textheader2" id="about">About Avocy</h2>
+                <p class="underheader bottomgreenborder">
+                    A culture built around clinical excellence.
+                </p>
                 <p class="textboxcontent">We started Avocy with a clear vision of
                     helping individuals in recovery have access
                     to long-term, insurance-covered therapy. <br><br>
@@ -72,7 +115,7 @@
                     you on your journey.</p>
             </div>
             <div class="contentright">
-                <img id="rightgraphic" src="images/relapsegraphic.PNG">
+                <div id="rightgraphic"></div>
                 <div class="dropbox button">
                     <p class="inline">TBD Dropdown</p>
                     <img class="smallimg" src="images/downchevronblack.png">
@@ -101,17 +144,41 @@
 
             </div>            
         </div>
+        <!-- contact div -->
+        <div id="contact" class="gradientfade1">
+            <div class="textbox">
+                <h3 class="subheader"> Let's Talk</h3>
+                <h2 class="textheader textheader2" id="about">Contact</h2>
+                <p class="underheader">
+                    Interested in working with Avocy to ensure your patients receive optimal post-discharge care? Feel free to use the contact box below to reach out to us. We typically respond within 24 hours.
+                    We are currently only accepting new partner facilities in the state of Florida.
+                </p>
+            </div>
+            <form action="https://formsubmit.co/across@avocy-health.com" method="POST">
+                <h2 class="formheader">Send Us An Email</h2>
+                <legend>* indicates required fields</legend>
+                <label for="name"><br>Name: *</label><br>
+                <input type="text" id="name" name="user_name" placeholder="Full Name" required><br><br>
+                <label for="email">Email: *</label><br>
+                <input type="email" id="email" name="user_email" placeholder="yourname@yourdomain.com" required><br><br>
+                <label for="phone_number">Phone Number: *</label><br>
+                <input type="tel" id="phone_number" name="user_phone" placeholder="(123) 456-7890" required><br><br>
+                <label for="comments">Comments or Questions:</label><br>
+                <textarea id="comments" name="user_comments" placeholder="Anything else we should know?"></textarea><br><br>
+                <button class="button formbutton" type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 
     <footer>
         <ul class="listoflists">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Avocy</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#telehealth">Telehealth Therapy</a></li>
+            <li><a href="#insurance">Insurance</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
-        <ul class="listoflists">
+        <!-- <ul class="listoflists">
             <li><a href="#">Telehealth Therapy</a></li>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">Benefits</a></li>
@@ -121,7 +188,7 @@
             <li><a href="#">Insurance</a></li>
             <li><a href="#">How It Works</a></li>
             <li><a href="#">In-Network Payors</a></li>
-        </ul>
+        </ul> -->
     </footer>
 </body>
 </html>

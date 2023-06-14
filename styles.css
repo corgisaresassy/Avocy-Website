@@ -1,7 +1,41 @@
 /* general stuff here */
 
 * {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Replace everything with Montserat */
+
+form{
+    width:50%;
+    /* background-color:whitesmoke; */
+    text-align:center;
+    margin:0 25%;
+    padding:0px 0 30px 0;
+    /* color:#00609C; */
+
+}
+
+input, textarea{
+    background-color:whitesmoke;
+    border:none;
+    border: solid 2px #00609C;
+    width:80%;
+}
+
+/* 
+label{
+    float:left;
+    margin-left:10%;
+}
+
+input{
+    float:right;
+    margin-right:10%;
+} */
+
+p{
+    font-size:.8em;
 }
 
 a:link{
@@ -18,6 +52,7 @@ a:visited{
     color:whitesmoke;
     padding: 15px 25px;
     background-color: #00609C;
+    font-weight:bold;
 }
 
 body{
@@ -46,9 +81,11 @@ header {
     min-height:75px;
     padding:0px;
     margin:0;
+    margin-left:40vw;
+    font-weight:bold;
 }
 .navbar li{
-    font-size:1.3rem;
+    font-size:1.2rem;
     color:#00609C;
 }
 .navbar li a:link, .navbar li a:visited{
@@ -59,6 +96,8 @@ header {
     float:left;
     width:auto;
     height:75px;
+    padding: 5px 0 0 10px;
+
     
 }
 .navbar li{
@@ -94,6 +133,7 @@ header {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    opacity:.8;
 }
 /*add white chat box logo as background to the menu high opacity with the current grey
 I did this, it looks pretty terrible honestly. I like the logo though menu icon! */
@@ -117,17 +157,32 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 
 }
 .overlaytext{
-    float:right;
-    margin: 250px 10px 0 0;
-    max-width: 40vw;
-    font-size:2.3em;
+    float:none;
+    margin:0;
+    text-align:right;
+    padding-top:200px;
+    padding-left:25vw;
+    padding-right:5vw;
+    max-width: 70vw;
+    font-size:4em;
     color:#00609C;
 }
-.overlaybutton{
-    float:right;
-    margin-top: 400px;
-    margin-right: -350px;
-    margin-left: 380px;
+.overlaybutton1{
+    float:none;
+    display:inline-block;
+    margin-left: 40vw;
+    width:20vw;
+    font-size:1.2em;
+    text-align:center;
+}
+
+.overlaybutton2{
+    float:none;
+    display:inline-block;
+    margin-left: 5vw;
+    width:20vw;
+    font-size:1.2em;
+    text-align:center;
 }
 
 /* imagebar stuff goes here */
@@ -138,58 +193,137 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     align-items:center;
     width:100%;
     margin-right:0;
-    margin-top:8px;
+    margin-top:0;
     flex-wrap:wrap;
     gap:10px;
+    border-right: solid 2px #A1D683
+}
+
+.greenbottomborder{
+    border-bottom:solid 2px #A1D683;
 }
 
 .imagebar img{
     width: 12vw;
     height: auto;
-    margin-left:4vw;
+    padding:8vw 4vw;
     min-width: 80px;
+    /* border: solid 2px #A1D683; */
 }
 
 /* begin area for the first textbox and textboxes in general */
 
 .textbox{
-width:90%;
-margin-left:5%;
+    width:100%;
+}
+
+.subheader{
+    color: rgba(0,96,156,1);
+    width:90%;
+    padding:20px 5% 0;
+    margin:0;
 }
 
 .textheader{
-    color:#00609C;
-    border-bottom: 4px solid #F5CE3E;
-    width:100%;
+    color:rgba(44,44,44,.8);
+    /* border-bottom: 4px solid #F5CE3E; */
+    width:90%;
+    padding: 0 5%;
+    font-size:4em;
+    margin:0;
+}
+
+.textheader2{
+    font-size:3em;
+}
+
+.underheader{
+    font-style:italic;
+    padding: 0% 5% 15px 5%;
+    margin:0;
 }
 
 .textboxcontent{
     font-weight:300;
-    font-size:1.3em;
+    font-size:1.1em;
+    padding: 0% 5%;
+}
+.columnholder{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    border-top:solid 2px #A1D683;
+}
+.columnof3{
+    display:inline-block;
+    width:20%;
+    /* margin: 0 0 0 5%; */
+    border-left:solid 2px #54C8E8;
+    padding:20px 0 20px 10px;
+    min-width:250px;
+}
+.columnheader{
+    color:#7ab956;
+    font-size:1.2em;
 }
 .flexbox{
     display:flex;
+    justify-content:space-evenly;
 }
 .break-column{
     flex-basis:100%;
     width:0;
 }
 
+/* figure out effective shadow styling for individual elements (diff background elements) */
 .textboxleft{
     width:45%;
+    /* background-color:white;
+    box-shadow: -4px -4px lightgrey; */
+    /* border-left: 1px solid #F5CE3E; */
 }
 .contentright{
     width:45%;
-    margin-left:5%;
-    margin-top: 25px;
+    margin-left:2.5%;
+    /* border-left: 1px solid #F5CE3E; */
 }
 /* relapse graphic creation content */
 #rightgraphic{
-    float:right;
-    width:90%;
-    margin-right:5%;
+    width:calc(80% + 20px);
+    height:250px;
+    margin:50px 10px 10px 5%;
+    background-image:linear-gradient(180deg,rgba(218,223,225,.6),rgba(161,214,131,.8)),url(images/image.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    opacity:.9;
+    /* filter:grayscale(100%); */
 }
+/* when mobile, have 70% icon disappear from where it is now and have a new one appear inbetween text boxes */
 
+.gradientfade1{
+    background-image:linear-gradient(180deg,rgba(218,223,225,.6),rgba(0,96,156,1));
+}
+.gradientfade2{
+    background-image:linear-gradient(180deg,rgba(0,96,156,.6),rgba(218,223,225,.6));
+}
+.postfadegrey{
+    background-color:rgba(218,223,225,.6);
+}
+.leftblueborder{
+    border-left:solid 2px #54C8E8;
+}
+.bottomblueborder{
+    border-bottom:solid 2px #54C8E8;
+    padding-bottom:15px;
+}
+.bottomgreenborder{
+    border-bottom:solid 2px #A1D683;
+    padding-bottom:15px;
+}
+.bottomgoldborder{
+    border-bottom:solid 2px #F5CE3E;
+}
 /* drop down reactive elements */
 
 .dropbox{
@@ -201,6 +335,7 @@ margin-left:5%;
     margin:10px 10px 10px 5%;
     padding: 5px 10px;
     flex-wrap:wrap;
+    background-color:#7ab956;
 }
 .smallimg{
     display:inline;
@@ -226,49 +361,51 @@ margin-left:5%;
 /* footer stuff here (except global) */
 .listoflists{
     list-style-type:none;
+    display:inline-block;
+}
+
+.listoflists li{
+    display:inline-block;
+    margin:0 2vw;
+}
+
+.formbutton{
+    margin:20px 0;
+    float:none;
+}
+
+.formheader{
+    color:#00609C;
+    border-bottom: 4px solid #F5CE3E;
+    width:80%;
+    margin-left:10%;
+    text-align:center;
 }
 
 /* sticky phone icon for mobile only to call directly */
 
-@media screen and (max-width:850px){
+@media screen and (max-width:863px){
     .overlay{
         height:70vh;
     }
     .overlaytext{
-        display:block;
         max-width:85%;
-        margin:45vh 5% 2vh 5%;
+        /* margin:0 5% 2vh 5%; */
+        padding:40vh 5% 2vh 5%;
         font-size:2.5em;
         text-align:center;
     }
-    .overlaybutton{
-        margin: 50px 10px 50px 30px;
+    .overlaybutton1{
+        margin: 50px 5vw 50px 20vw;
         padding: 10px 15px;
+        font-size:.9em;
+    }
+    .overlaybutton2{
+        margin: 50px 20vw 50px 0vw;
+        padding: 10px 15px;
+        font-size:.9em;
     }
 }
-
-@media screen and (max-width:420px){
-    .overlaytext{
-        font-size:1.5em;
-    }
-    .overlaybutton{
-        display:block;
-        width:80%;
-        margin-top:1vh;
-        margin-bottom:1vh;
-        
-    }
-    .mobilenav{
-        width:100%;
-    }
-    .imagebar img{
-        min-width:120px;
-    }
-    .dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
-    .dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
-}
-
-
 
 @media screen and (max-width:700px){
     .navbar{
@@ -301,4 +438,49 @@ margin-left:5%;
     .textboxleft{
         width:80%;
     }
+    .listoflists{
+        width:100%;
+    }
+    .listoflists li{
+        display:block;
+        padding:3px 0;
+        text-align:center;
+    }
+    .overlaybutton1{
+        font-size:.7em;
+        margin-left:15vw;
+    }
+    .overlaybutton2{
+        font-size:.7em;
+        margin-right:15vw;
+    }
 }
+
+@media screen and (max-width:420px){
+    .overlaytext{
+        font-size:1.5em;
+    }
+    .overlaybutton1{
+        display:block;
+        width:80%;
+        margin: 1vh 10% 1vh 10%;
+        
+    }
+    .overlaybutton2{
+        display:block;
+        width:80%;
+        margin: 1vh 10% 1vh 10%;
+    }
+    .textheader{
+        font-size:3em;
+    }
+    .mobilenav{
+        width:100%;
+    }
+    .imagebar img{
+        min-width:120px;
+    }
+    .dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
+    .dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
+}
+
