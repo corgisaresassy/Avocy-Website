@@ -7,10 +7,10 @@
 /* Replace everything with Montserat */
 
 form{
-    width:50%;
+    width:60vw;
     /* background-color:whitesmoke; */
-    text-align:center;
-    margin:0 25%;
+    /* text-align:center; */
+    margin:0 5%;
     padding:0px 0 30px 0;
     /* color:#00609C; */
 
@@ -20,7 +20,7 @@ input, textarea{
     background-color:whitesmoke;
     border:none;
     border: solid 2px #00609C;
-    width:80%;
+    width:100%;
 }
 
 /* 
@@ -196,7 +196,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     margin-top:0;
     flex-wrap:wrap;
     gap:10px;
-    border-right: solid 2px #A1D683
+    /* border-right: solid 2px #A1D683 */
 }
 
 .greenbottomborder{
@@ -206,7 +206,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 .imagebar img{
     width: 12vw;
     height: auto;
-    padding:8vw 4vw;
+    padding:4vw 4vw;
     min-width: 80px;
     /* border: solid 2px #A1D683; */
 }
@@ -220,7 +220,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 .subheader{
     color: rgba(0,96,156,1);
     width:90%;
-    padding:20px 5% 0;
+    padding:60px 5% 0;
     margin:0;
 }
 
@@ -229,7 +229,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     /* border-bottom: 4px solid #F5CE3E; */
     width:90%;
     padding: 0 5%;
-    font-size:4em;
+    font-size:3.8em;
     margin:0;
 }
 
@@ -239,8 +239,8 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 
 .underheader{
     font-style:italic;
-    padding: 0% 5% 15px 5%;
-    margin:0;
+    padding: 20px 0 30px 0;
+    margin: 0 5%;
 }
 
 .textboxcontent{
@@ -253,27 +253,39 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
-    border-top:solid 2px #A1D683;
+    /* border-top:solid 2px #A1D683; */
 }
 .columnof3{
     display:inline-block;
     width:20%;
     /* margin: 0 0 0 5%; */
     border-left:solid 2px #54C8E8;
-    padding:20px 0 20px 10px;
+    padding:0px 1% 0px 4%;
+    margin-bottom:60px;
     min-width:250px;
 }
 .columnheader{
-    color:#7ab956;
+    color:#00609C;
     font-size:1.2em;
+    margin-top:0;
 }
 .flexbox{
     display:flex;
     justify-content:space-evenly;
 }
-.break-column{
-    flex-basis:100%;
-    width:0;
+
+.banner{
+    margin:0;
+    width:100%;
+    height:100px;
+    background-color:#522675;
+    text-align:center;
+    color:whitesmoke;
+    font-size:1em;
+}
+.bannertext{
+    margin:0;
+    padding-top:30px;
 }
 
 /* figure out effective shadow styling for individual elements (diff background elements) */
@@ -293,7 +305,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     width:calc(80% + 20px);
     height:250px;
     margin:50px 10px 10px 5%;
-    background-image:linear-gradient(180deg,rgba(218,223,225,.6),rgba(161,214,131,.8)),url(images/image.png);
+    background-image:linear-gradient(180deg,rgba(0,96,156,.6),rgba(82,38,117,.8)),url(images/image.png);
     background-repeat:no-repeat;
     background-size: cover;
     opacity:.9;
@@ -317,12 +329,16 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     border-bottom:solid 2px #54C8E8;
     padding-bottom:15px;
 }
-.bottomgreenborder{
-    border-bottom:solid 2px #A1D683;
+.bottompurpleborder{
+    border-bottom:solid 2px #522675;
     padding-bottom:15px;
 }
 .bottomgoldborder{
-    border-bottom:solid 2px #F5CE3E;
+    /* border-bottom:solid 2px #F5CE3E; */
+    padding-bottom:60px;
+}
+#insurancesubheader{
+padding-top:0px;
 }
 /* drop down reactive elements */
 
@@ -335,7 +351,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     margin:10px 10px 10px 5%;
     padding: 5px 10px;
     flex-wrap:wrap;
-    background-color:#7ab956;
+    background-color:#522675;
 }
 .smallimg{
     display:inline;

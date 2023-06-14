@@ -35,6 +35,10 @@
             <div class="navbutton"></div> -->
         </div>
 
+
+        <!-- add a pagebreak with blue background maybe 70% metric thing between insurance and about avocy
+        fix blue line under insurance to only go from end to end of italics
+     purple line in about avocy as well-->
     </header>
     <main>
         <!-- Image overlay div -->
@@ -43,7 +47,7 @@
             <a href="#contact"><p class="button overlaybutton1">Get In Touch</p></a>
             <a href="#insurance"><p class="button overlaybutton2">We Take Insurance</p></a>
         </div>
-        <div class="textbox postfadegrey bottomgoldborder">
+        <div class="textbox postfadegrey">
             <h3 class="subheader"> The Avocy Difference</h3>
             <h2 class="textheader" id="telehealth">Telehealth Therapy</h2>
             <!-- Break into three columns, seperate with gold, various harmonious colors for titles for each section, see cleans thing
@@ -54,7 +58,7 @@
                 Avocy tailors it's outpatient program to the patient needs and helps ensure patients work with one of our expert addiction focused therapists to receive the best possible care in their recovery journey.
             </p>
             <div class="columnholder">
-                <div class="columnof3">
+                <div class="columnof3" style="border:0;">
                     <h3 class="columnheader">Free Cookies</h3>
                     Avocy offers up to thrice weekly insurance-covered telehealth therapy to people of all ages recovering from substance use disorder and other mental health issues. <br><br>
                     Our expert clinical staff meet the patient where they are to help them work through the unique struggles of addiction recovery. We take a humanistic approach to treatment and recovery.
@@ -71,35 +75,43 @@
                 </div>
             </div>
         </div>
-        <div class="flexbox postfadegrey greenbottomborder">
-            <div class = "imagebar textboxleft">
-                <img src="images/bcbslogo.png">
-                <img src="images/aetnalogocrop.png">
-                <img src="images/cignalogo.png">
-                <img src="images/unitedlogo.png">
+        <div class="banner">
+            <h2 class="bannertext">This website looks better than it did this morning!</h2>
+        </div>
+        <div class="postfadegrey">
+            <h3 class="subheader"> Affordable Treatment</h3>
+            <h2 class="textheader" id="insurance">Insurance</h2>
+            <p id="insurancesubheader" class="underheader bottomblueborder">
+                Avocy was built with the patients cost in mind. Many patients will have no out of pocket cost. Patients love our free pickles and the ability to get more pickles when they arrive ont ime to meetings and other events. We also offer free puppy hugs and other puppy related activities.
+            </p>
+            <div class="flexbox">
+                <div class = "imagebar textboxleft">
+                    <img src="images/bcbslogo.png">
+                    <img src="images/aetnalogocrop.png">
+                    <img src="images/cignalogo.png">
+                    <img src="images/unitedlogo.png">
+                </div>
+                <!--put images and text side by side. Left image and right content. -->
+                <!-- text box 1, therapy approaches -->
+                <div class="contentright">
+
+                    <p class="textboxcontent">
+                        Avocy's services are covered by all major health insurance providers and include telehealth therapy up to three times a week. <br><br>
+                        Avocy works closely with your insurance company to keep patient costs low and treatment can often be free for those who've met their deductibles and out-of-pocket max. <br><br>
+                        Feel comfortable going through therapy specialized for your needs without breaking the bank.
+                    </p>
+                </div>
             </div>
-            <!--put images and text side by side. Left image and right content. -->
-            <!-- text box 1, therapy approaches -->
-            <div class="contentright">
-                <h3 class="subheader"> Affordable Treatment</h3>
-                <h2 class="textheader textheader2" id="insurance">Insurance</h2>
-                <p class="underheader bottomblueborder">
-                    Avocy was built with the patients cost in mind. Many patients will have no out of pocket cost.
-                </p>
-                <p class="textboxcontent">
-                    Avocy's services are covered by all major health insurance providers and include telehealth therapy up to three times a week. <br><br>
-                    Avocy works closely with your insurance company to keep patient costs low and treatment can often be free for those who've met their deductibles and out-of-pocket max. <br><br>
-                    Feel comfortable going through therapy specialized for your needs without breaking the bank.
-                </p>
-            </div>
+        </div>
+        <div>
             
         </div>
         <div class="flexbox postfadegrey bottomgoldborder">
             <div class="textbox textboxleft">
                 <h3 class="subheader"> Built Patient First</h3>
-                <h2 class="textheader textheader2" id="about">About Avocy</h2>
-                <p class="underheader bottomgreenborder">
-                    A culture built around clinical excellence.
+                <h2 class="textheader" id="about">About Avocy</h2>
+                <p class="underheader bottompurpleborder">
+                    A culture built around clinical excellence, incredible patient care, and a caring family.
                 </p>
                 <p class="textboxcontent">We started Avocy with a clear vision of
                     helping individuals in recovery have access
@@ -145,28 +157,31 @@
             </div>            
         </div>
         <!-- contact div -->
-        <div id="contact" class="gradientfade1">
-            <div class="textbox">
-                <h3 class="subheader"> Let's Talk</h3>
-                <h2 class="textheader textheader2" id="about">Contact</h2>
-                <p class="underheader">
-                    Interested in working with Avocy to ensure your patients receive optimal post-discharge care? Feel free to use the contact box below to reach out to us. We typically respond within 24 hours.
-                    We are currently only accepting new partner facilities in the state of Florida.
-                </p>
+        <div class="gradientfade1">
+            <h3 class="subheader"> Let's Talk</h3>
+            <h2 class="textheader textheader2" id="about">Contact</h2>
+            <div id="contact" class="flexbox">
+                    <form action="https://formsubmit.co/across@avocy-health.com" method="POST">
+                        <!-- <h2 class="formheader">Send Us An Email</h2>
+                        <legend>* indicates required fields</legend> -->
+                        <label for="name"><br>Name: *</label><br>
+                        <input type="text" id="name" name="user_name" placeholder="Full Name" required><br><br>
+                        <label for="email">Email: *</label><br>
+                        <input type="email" id="email" name="user_email" placeholder="yourname@yourdomain.com" required><br><br>
+                        <label for="phone_number">Phone Number: *</label><br>
+                        <input type="tel" id="phone_number" name="user_phone" placeholder="(123) 456-7890" required><br><br>
+                        <label for="comments">Comments or Questions:</label><br>
+                        <textarea id="comments" name="user_comments" placeholder="Anything else we should know?"></textarea><br><br>
+                        <button class="button formbutton" type="submit">Submit</button>
+                    </form>
+                <div class="contentright">
+                    <h3 class="subheader"> Puppies are cute</h3>
+                    <p class="textboxcontent">
+                        Interested in working with Avocy to ensure your patients receive optimal post-discharge care? Feel free to use the contact box below to reach out to us. We typically respond within 24 hours.
+                        We are currently only accepting new partner facilities in the state of Florida.
+                    </p>
+                </div>
             </div>
-            <form action="https://formsubmit.co/across@avocy-health.com" method="POST">
-                <h2 class="formheader">Send Us An Email</h2>
-                <legend>* indicates required fields</legend>
-                <label for="name"><br>Name: *</label><br>
-                <input type="text" id="name" name="user_name" placeholder="Full Name" required><br><br>
-                <label for="email">Email: *</label><br>
-                <input type="email" id="email" name="user_email" placeholder="yourname@yourdomain.com" required><br><br>
-                <label for="phone_number">Phone Number: *</label><br>
-                <input type="tel" id="phone_number" name="user_phone" placeholder="(123) 456-7890" required><br><br>
-                <label for="comments">Comments or Questions:</label><br>
-                <textarea id="comments" name="user_comments" placeholder="Anything else we should know?"></textarea><br><br>
-                <button class="button formbutton" type="submit">Submit</button>
-            </form>
         </div>
     </main>
 
