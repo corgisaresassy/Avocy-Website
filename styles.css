@@ -3,77 +3,53 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
-
-/* Replace everything with Montserat */
-
 form{
     width:60vw;
-    /* background-color:whitesmoke; */
-    /* text-align:center; */
     margin:0 5%;
     padding:0px 0 30px 0;
-    /* color:#00609C; */
-
 }
-
 input, textarea{
     background-color:whitesmoke;
     border:none;
     border: solid 2px #00609C;
     width:100%;
 }
-
-/* 
-label{
-    float:left;
-    margin-left:10%;
-}
-
-input{
-    float:right;
-    margin-right:10%;
-} */
-
 p{
     font-size:.8em;
 }
-
 a:link{
     color:inherit;
     text-decoration:none;
 }
-
 a:visited{
     color:inherit;
     text-decoration:none;
 }
-
 .button{
     color:whitesmoke;
     padding: 15px 25px;
     background-color: #00609C;
     font-weight:bold;
 }
-
+header {
+    background-color: whitesmoke;
+    border-bottom: 4px solid #F5CE3E;
+    margin:0;
+    min-height:75px;
+}
 body{
     margin:0;
     background-color:whitesmoke;
 }
-
 footer{
     background-color:#00609C;
     color:whitesmoke;
     display:flex;
 }
 
-/* navbar stuff here */
-header {
-    background-color: whitesmoke;
-    border-bottom: 4px solid #F5CE3E;
-    margin:0;
-    min-height:75px;
 
-}
+/* navbar stuff here */
+
 .navbar{
     display:flex;
     justify-content:space-evenly;
@@ -97,8 +73,6 @@ header {
     width:auto;
     height:75px;
     padding: 5px 0 0 10px;
-
-    
 }
 .navbar li{
     display:inline;
@@ -112,16 +86,12 @@ header {
     width:50px;
     z-index:5;
 }
-
 .navbutton {
     width:50px;
     height:35px;
     background-image: url(images/Logomark/Avocy_Logomark_White-200px.png);
     background-repeat:no-repeat;
     background-size:cover;
-
-    /* height:5px; */
-    /* background-color:white; */
     margin: 6px 0;
     z-index:6;
 }
@@ -135,9 +105,6 @@ header {
     z-index: 1;
     opacity:.8;
 }
-/*add white chat box logo as background to the menu high opacity with the current grey
-I did this, it looks pretty terrible honestly. I like the logo though menu icon! */
-
 .mobilenav a{
     float: none;
     color: #00609C;
@@ -154,7 +121,6 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     background-repeat:no-repeat;
     background-size:cover;
     min-height:525px;
-
 }
 .overlaytext{
     float:none;
@@ -167,6 +133,17 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     font-size:4em;
     color:#00609C;
 }
+.overlaysubtext{
+    float:none;
+    margin:0;
+    text-align:right;
+    padding-top:20px;
+    padding-left:25vw;
+    padding-right:5vw;
+    max-width: 70vw;
+    font-size:2em;
+    color:#00609C;
+}
 .overlaybutton1{
     float:none;
     display:inline-block;
@@ -175,7 +152,6 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     font-size:1.2em;
     text-align:center;
 }
-
 .overlaybutton2{
     float:none;
     display:inline-block;
@@ -184,9 +160,7 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     font-size:1.2em;
     text-align:center;
 }
-
 /* imagebar stuff goes here */
-
 .imagebar{
     display:flex;
     justify-content:space-evenly;
@@ -196,19 +170,15 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     margin-top:0;
     flex-wrap:wrap;
     gap:10px;
-    /* border-right: solid 2px #A1D683 */
 }
-
 .greenbottomborder{
     border-bottom:solid 2px #A1D683;
 }
-
 .imagebar img{
     width: 12vw;
     height: auto;
     padding:4vw 4vw;
     min-width: 80px;
-    /* border: solid 2px #A1D683; */
 }
 
 /* begin area for the first textbox and textboxes in general */
@@ -216,33 +186,27 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 .textbox{
     width:100%;
 }
-
 .subheader{
     color: rgba(0,96,156,1);
     width:90%;
     padding:60px 5% 0;
     margin:0;
 }
-
 .textheader{
     color:rgba(44,44,44,.8);
-    /* border-bottom: 4px solid #F5CE3E; */
     width:90%;
     padding: 0 5%;
     font-size:3.8em;
     margin:0;
 }
-
 .textheader2{
     font-size:3em;
 }
-
 .underheader{
     font-style:italic;
     padding: 20px 0 30px 0;
     margin: 0 5%;
 }
-
 .textboxcontent{
     font-weight:300;
     font-size:1.1em;
@@ -253,12 +217,10 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
-    /* border-top:solid 2px #A1D683; */
 }
 .columnof3{
     display:inline-block;
     width:20%;
-    /* margin: 0 0 0 5%; */
     border-left:solid 2px #54C8E8;
     padding:0px 1% 0px 4%;
     margin-bottom:60px;
@@ -272,12 +234,37 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 .flexbox{
     display:flex;
     justify-content:space-evenly;
+    padding:40px 0;
 }
-
+.flexcard{
+    background-color:rgba(255, 255, 255, 0.4);
+    border-radius:10px;
+    box-shadow:0 10px 30px 0 RGBA(56,46,39,.15);
+    flex-wrap:nowrap;
+    justify-content:center;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 25vw;
+    padding:2%;
+}
+.flexcardimg{
+    max-width:50px;
+    height:auto;
+}
+.textboxleft{
+    width:45%;
+}
+.contentright{
+    width:45%;
+    margin-left:2.5%;
+}
+/* Banner content */
 .banner{
     margin:0;
     width:100%;
-    height:100px;
+    height:auto;
     background-color:#522675;
     text-align:center;
     color:whitesmoke;
@@ -286,33 +273,9 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
 .bannertext{
     margin:0;
     padding-top:30px;
+    padding-bottom:30px;
 }
-
-/* figure out effective shadow styling for individual elements (diff background elements) */
-.textboxleft{
-    width:45%;
-    /* background-color:white;
-    box-shadow: -4px -4px lightgrey; */
-    /* border-left: 1px solid #F5CE3E; */
-}
-.contentright{
-    width:45%;
-    margin-left:2.5%;
-    /* border-left: 1px solid #F5CE3E; */
-}
-/* relapse graphic creation content */
-#rightgraphic{
-    width:calc(80% + 20px);
-    height:250px;
-    margin:50px 10px 10px 5%;
-    background-image:linear-gradient(180deg,rgba(0,96,156,.6),rgba(82,38,117,.8)),url(images/image.png);
-    background-repeat:no-repeat;
-    background-size: cover;
-    opacity:.9;
-    /* filter:grayscale(100%); */
-}
-/* when mobile, have 70% icon disappear from where it is now and have a new one appear inbetween text boxes */
-
+/* gradient and color classes */
 .gradientfade1{
     background-image:linear-gradient(180deg,rgba(218,223,225,.6),rgba(0,96,156,1));
 }
@@ -334,14 +297,22 @@ I did this, it looks pretty terrible honestly. I like the logo though menu icon!
     padding-bottom:15px;
 }
 .bottomgoldborder{
-    /* border-bottom:solid 2px #F5CE3E; */
     padding-bottom:60px;
 }
+/* ID specific items */
 #insurancesubheader{
 padding-top:0px;
 }
+#rightgraphic{
+    width:calc(80% + 20px);
+    height:250px;
+    margin:50px 10px 10px 5%;
+    background-image:linear-gradient(180deg,rgba(0,96,156,.6),rgba(82,38,117,.8)),url(images/image.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    opacity:.9;
+}
 /* drop down reactive elements */
-
 .dropbox{
     text-align:center;
     width:80%;
@@ -359,8 +330,8 @@ padding-top:0px;
     height:auto;
     filter:brightness(0) invert(1);
 }
-.dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:200px;margin:0;}
-.dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:200px;margin:0;}
+.dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:100px;margin:0;}
+.dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:100px;margin:0;}
 .inline{
     display:inline;
 }
@@ -373,13 +344,11 @@ padding-top:0px;
     width:100%;
 }
 
-
 /* footer stuff here (except global) */
 .listoflists{
     list-style-type:none;
     display:inline-block;
 }
-
 .listoflists li{
     display:inline-block;
     margin:0 2vw;
@@ -406,9 +375,16 @@ padding-top:0px;
     }
     .overlaytext{
         max-width:85%;
-        /* margin:0 5% 2vh 5%; */
-        padding:40vh 5% 2vh 5%;
+        padding:40vh 5% 1vh 5%;
         font-size:2.5em;
+        text-align:center;
+    }
+    .overlaysubtext{
+        max-width:85%;
+        padding-right:5%; 
+        padding-bottom:2vh;
+        padding-left:5%;
+        font-size:1.5em;
         text-align:center;
     }
     .overlaybutton1{
@@ -420,6 +396,10 @@ padding-top:0px;
         margin: 50px 20vw 50px 0vw;
         padding: 10px 15px;
         font-size:.9em;
+    }
+    .bannertext{
+        padding-left:5%;
+        padding-right:5%;
     }
 }
 
@@ -473,19 +453,24 @@ padding-top:0px;
 }
 
 @media screen and (max-width:420px){
+    *{
+        text-align:center;
+    }
     .overlaytext{
         font-size:1.5em;
+        margin-left:2.5%;
     }
     .overlaybutton1{
         display:block;
         width:80%;
         margin: 1vh 10% 1vh 10%;
-        
+        margin-left:calc(10% - 15px);
     }
     .overlaybutton2{
         display:block;
         width:80%;
         margin: 1vh 10% 1vh 10%;
+        margin-left:calc(10% - 15px);
     }
     .textheader{
         font-size:3em;
@@ -496,6 +481,17 @@ padding-top:0px;
     .imagebar img{
         min-width:120px;
     }
+    .flexcard,.textboxleft,.contentright, form{
+        width:80%;
+        margin:5% 10%;
+    }
+    .columnof3{
+        border:none;
+    }
+    .listoflists{
+        padding:0;
+    }
+
     .dropbox:hover .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
     .dropbox:active .dropdowncontent{visibility:visible;opacity:1;height:220px;margin:0;}
 }
